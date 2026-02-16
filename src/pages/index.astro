@@ -1,0 +1,33 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Hey, I'm Quique Mateu</h1>
+			<p>
+				Senior Software Engineer at <a href="https://github.com/commercetools">commercetools</a>,
+				based in Valencia, Spain. I build APIs, services, and cloud infrastructure with
+				TypeScript, Node.js, and Google Cloud.
+			</p>
+			<p>
+				When I'm not coding, I'm coaching volleyball at Club Voleibol Xativa
+				or watching the NBA.
+			</p>
+			<p>
+				Check out my <a href="/blog">blog</a> where I write about backend engineering,
+				cloud infrastructure, and things I learn along the way.
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
